@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Form</title>
+	</head>
+	<body>
+		<h1>Welcome to my browser</h1>
+		<p>
+			<i>Here</i> we
+			<u>learn</u>
+			all about
+			<b>HTML</b>
+			tags and we will learn
+			<del>HTML5</del>
+			also.
+			<br>
+			<h3>subscript</h3>H<sub>2</sub>
+			<h3>subperscript</h3>o<br>x<sup>2</sup>
+		</p>
+		<!--
+		<i>For Italic</i>
+		<u>For underline </u>
+		<b>For bold</b>
+		<del>For deprecated text</del>
+		<sub>For give some text in below of any text</sub> // subscript
+		<sup>For give some text on top of any text</sup> //superscript
+		-->
+		<hr>
+		<h3>Image tag</h3>
+		<img src="path of image" alt="alternative path" title="logo">
+		<!-- title attribute is for when you hovering mouse on the image then whaterver you write in title it will show -->
+		<hr>
+		<h3>Anchour tag</h3>
+		<a href="file:///D:/Web_Development/HTML/index.html" target="_blank">Move to my next page</a>
+		<!-- target attribute is used for give instruction the webpage will open in same tab or next tab if you choose target="_blank" then the webpage will open next tab otherwise the target attribute value is self by defalut -->
+		<hr>
+		<h3>UnOrder list</h3>
+		<ul type="square">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>bootstrap</li>
+			<li>javaScript</li>
+		</ul>
+		<hr>
+		<!-- type attribute is used for what type of bullatine you want -->
+		<h3>Ordered list</h3>
+		<ol type="i">
+			<li>jQuery</li>
+			<li>Node JS</li>
+			<li>PHP</li>
+			<li>Angular JS</li>
+		</ol>
+		<br>
+		<!-- it has 2 attributes one is type="a/i(roman)" start="d" this start attribute is use for which alphabet you want to start count -->
+		<h3>Table format</h3>
+		<table border="1" cellspacing="0">
+			<tr>
+				<th colspan="3">Name</th>
+				<th>Gender</th>
+				<th>Phone number</th>
+			</tr>
+			<tr>
+				<td rowspan="2">Nishan sarkar</td>
+				<td>Male</td>
+				<td>8759923629</td>
+			</tr>
+			<tr>
+				<td>Oindrila</td>
+				<td>Female</td>
+				<td>7797852452</td>
+			</tr>
+			<tr>
+				<td>Gourab</td>
+				<td>Male</td>
+				<td>7700159566</td>
+			</tr>
+		</table>and
+		<hr>
+		<!--
+		table has 2 attributes border and cellspacing
+		<th></th> & <td></td> has 2 attributes that is colspan(in colspan whatever you give value that will be join the column number) and rowspan(in rowspan whaterver you give value that will join that row number)
+		-->
+		<h3>Form</h3>
+		<form method="post" action="nishan.com">
+			<!-- Text field -->
+			<label>First Name: </label>
+			<input type="text" name="">
+			<label>Last Name: </label>
+			<input type="text" name="">
+			<br><br>
+			<label>Email id: </label>
+			<!-- required attribute is used for if we leave the email text box empty then it will throw an error "please fill out the field" -->
+			<input type="email" name="" required><br><br>
+			<label>Phone Number: </label>
+			<input type="text" name=""><br><br>
+			Password: <input type="password" name=""><br><br>
+			<!-- Radio buttons -->
+			<label><b>Gender</b></label>
+			<br>
+			<input type="radio" name="gender">
+			<label>Male</label>
+			<input type="radio" name="gender">
+			<label>Female</label>
+			<br><br>
+			<!-- in radio button we have to give same value in name attribute otherwise it will select all radio buttons -->
+			<!-- Check box -->
+			<!-- Date => Date picker -->
+			DOB : <input type="date" name="date"><br><br>
+			<!-- Date time => in this tag you can select date and time -->
+			Date & Time : <input type="datetime-local" name="date-time"><br><br>
+			<!-- Color => in this tag you can select color -->
+			Choose Color : <input type="color" name="color"><br><br>
+			<!-- Month and Year => in this tag you can only select month and year -->
+			Select Month & Year : <input type="month" name="bdaymonth"><br><br>
+			<!-- number => you can write a number between a range -->
+			Quantity(between 1 and 5) : <input type="number" name="quantity" min="1" max="5"><br><br>
+			<!-- Range => select a range -->
+			Price range : <input type="range" name="pricerange" min="1000" max="5000"><br><br>
+		<h3>Skills</label><h3>
+		<input type="checkbox" name="skills" value="HTML"> HTML<br>
+		<!-- <label>HTML</label><br> -->
+		<input type="checkbox" name="skills" value="CSS"> CSS<br>
+		<!-- <label>CSS</label><br> -->
+		<input type="checkbox" name="skills" value="bootstrap"> bootstrap<br>
+		<!-- <label>bootstrap</label><br> -->
+		<input type="checkbox" name="skills" value="javaScript"> javaScript<br>
+		<!-- <label>React JS</label><br> -->
+		<input type="checkbox" name="skills" value="jQuery"> jQuery<br>
+		<!-- <label>Angular JS</label><br> -->
+		<input type="checkbox" name="skills" value="React JS"> React Js<br>
+		<!-- <label>Node JS</label> -->
+		<!-- in check box give value and label same name -->
+		<!-- Dropdown menu -->
+		<h3>Dropdown menu</h3>
+		<label>Passout Year : </label>
+		<select>
+			<option value="">Select</option>
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+		</select><br><br>
+		<!-- in dropdown menu give same name as value -->
+		<!-- Text area -->
+		<h3>Text area</h3>
+		Write a message  <textarea cols="20" rows="5"></textarea><br><br>
+		<!-- submit button -->
+		<input type="submit" value="Click me">
+	</form>
+	<hr>
+
+	<!-- Canvas -->
+	<!-- 
+		The HTML<canvas></canvas> element is used to draw graphics on a web page. The <canvas> element is only a container for graphics. You must use JavaScript to acutally draw the graphics.
+
+		Canvas has several methods for drawing paths, boxes, circles, text and adding images.
+	-->
+	<h3>Canvas tag</h3>
+	<canvas id="myCanvas" width="200" height="150"></canvas>
+	<br>
+
+	<!-- SVG -->
+
+	<!--
+	SVG stands for scalable vector graphics
+	SVG is used to define graphics for the web
+	SVG is a W3C recommendation
+
+	Rectangle<rec> , Circle<circle> , Ellipse<ellipse> , Line<line> , Polyline<polyline> , Polygon<polygon> , Path<path>
+	-->
+	<h3>SVG tag</h3>
+	<svg height="100" width="100" style="border: 2px solid green;">
+		<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+	</svg>
+	<hr>
+
+	<!-- Audio => The HTML<audo> element specifies a standard way to embed audio in a web page -->
+	<!--
+	The controls attribute adds audio controls, like play, pause, and volume.
+
+	The <source src="" type=""> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+
+	The text between the <audo> and </audio> tags will only be displayed in browsers that do not support the <audo> element. 
+	-->
+
+	<!-- audio has 3 attribute controls, loop is used for when the audio will end it will start playing again and again and the last one is autoplay it is used for when the page is load then the song automatically start to play the audio -->
+	<h3>Audio tag</h3>
+	<audio controls>
+		<source src="D:\Web_Development\HTML\Hara Hara Shambhu.mp3" type="audio/mp3">
+	</audio>
+	<hr>
+
+	<!-- Video -->
+	<!--
+		when you use autoplay attribute then sometimes it might not work so you have to use at that time muted attribute then it will play automatically when the page is open but the video will be mute in default.
+	-->
+	<h3>Video tag</h3>
+	<video controls width="400" autoplay muted loop>
+		<source src="D:\Web_Development\HTML\how to appear for exam v1.mp4" type="video/mp4">
+	</video><hr>
+
+	<!-- Youtube video rendering -->
+	<!-- For embed youtube video there are several stages
+	Step1:- Open youtube choose which video you want to post in your website
+	Step2:- click on share option and then click on embed option
+	Step3:- when you click on embed option it will give a <iframe> code copy the code and paste in your html  -->
+	<h3>Embed youtube video</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/4V0-YpO-KZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<script type="text/javascript" src="D:\Web_Development\HTML\context.js"></script>
+</body>
+</html>
